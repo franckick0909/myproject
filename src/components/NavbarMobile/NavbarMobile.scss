@@ -1,0 +1,51 @@
+@import "../../styles/App";
+
+.navbarMobile{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .bg{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 350px;
+        height: 600px;
+        background: $color-7;
+        position: fixed;
+        top: 10vh;
+        right: 0;
+        z-index: 1000;
+    }
+
+    .toggle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        z-index: 1000;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+        z-index: 2000;
+        background: transparent;
+        @media screen and (min-width: 768px){
+            display: none;
+        }
+    
+        .line{
+            stroke: $color-9;
+        }
+    }
+}

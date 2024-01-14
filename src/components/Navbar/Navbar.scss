@@ -1,0 +1,29 @@
+@import "../../styles/App";
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    @media screen and (max-width: 860px){
+        gap: 1rem;
+    }
+    @media screen and (max-width: 768px){
+        display: none;
+    }
+
+    .linktop{
+        font-size: clamp(0.9rem, 3vw, 1.1rem);
+        font-weight: 400;
+        color: $color-4;
+        transition: color 0.3s ease;
+
+        &.active{
+            color: $color-7;
+        }
+
+        &:hover{
+            color: $color-9;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+@import "../../styles/App";
+.links{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.link{
+    font-size: clamp(1.1rem, 3vw, 2rem);
+    font-weight: 500;
+    color: $color-9;
+    display: flex;
+    transition: color 0.3s ease;
+
+
+    &.active{
+        color: $color-2;
+    }
+
+    &:hover{
+        color: $color-5;
+    }
+}
